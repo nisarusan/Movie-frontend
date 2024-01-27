@@ -11,10 +11,18 @@ function LoginPage() {
                 <section>
                     <div className="login">
                         <div className="login-wrapper">
-                            <p>login
+                            <p>Login
                             </p>
-                            <p>Signup</p>
+                            <p className="login--active">Signup</p>
                         </div>
+                        <form action="">
+                            <div className="login-input">
+                                <label htmlFor="name"><input type="text" placeholder="naam"/></label>
+                                <label htmlFor="name"><input type="email" placeholder="email"/></label>
+                                <label htmlFor="name"><input type="text" placeholder="last name"/></label>
+                            </div>
+                            <button className="btn btn-gradient" type="submit">Registreer</button>
+                        </form>
                     </div>
                 </section>
             </main>
