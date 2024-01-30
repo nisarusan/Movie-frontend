@@ -1,1 +1,15 @@
-fun
+.login {
+    align-self: flex-start;;
+    width: 100%;
+}
+.search-bar {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex: 1;
+}
+
+.search-bar p {
+    color: #505663;
+
+}

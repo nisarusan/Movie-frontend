@@ -6,8 +6,11 @@ function HomePage() {
 
     return (
         <>
-            <NavMenu />
-            <SearchBar />
+            <div className="container">
+                <NavMenu/>
+                <SearchBar/>
+
+            </div>
         </>
     );
 }

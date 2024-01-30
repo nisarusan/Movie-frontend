@@ -7,14 +7,14 @@ import SignupTab from "../SignupTab/SignupTab.jsx";
 function LoginPage() {
     return (
         <>
-            <main>
+            <main className="login-container">
                 <nav>
                     <MovieAppLogo/>
                 </nav>
                 <section>
                         <TabBarMenu />
                         <Routes>
-                            <Route path="/login" element={<LoginTab />} />
+                            <Route path="/login/*" element={<LoginTab />} />
                             <Route path="/signup" element={<SignupTab />} />
                         </Routes>
                 </section>

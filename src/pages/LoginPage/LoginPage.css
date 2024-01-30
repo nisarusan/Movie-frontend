@@ -1,6 +1,14 @@
 :root {
     --MOVIE-LINEAR: linear-gradient(90.11deg, #E2F2F6 0.07%, #3F91A2 28.47%, #002E41 56.87%, #18445E 81.59%, #95A1F1 105.25%);
 }
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 section {
     width: 32rem;
     flex-shrink: 0;

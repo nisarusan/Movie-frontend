@@ -1,4 +1,4 @@
-nav {
+.menu {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -18,3 +18,9 @@ nav:hover {
 a {
 
 }
+
+input[type="text"], input[type="email"], input[type="password"] {
+    border: none;
+}
+
+

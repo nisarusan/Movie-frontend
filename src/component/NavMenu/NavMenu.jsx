@@ -7,7 +7,7 @@ function NavMenu() {
     return (
         <>
             <header>
-                <nav>
+                <nav className="menu">
                     <MovieApp />
                     <HomeIcon/>
                     <MovieIcon/>
