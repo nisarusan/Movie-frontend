@@ -1,0 +1,5 @@
+.intro-movie {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+}

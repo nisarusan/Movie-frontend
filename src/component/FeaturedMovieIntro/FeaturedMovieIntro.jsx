@@ -23,7 +23,7 @@ export default function FeaturedMovieIntro() {
                     </div>
                 </div>
                 <div className="intro-movie-image">
-                    <img src="" alt="" />
+                    <img src="/src/assets/avatar-image.png" alt="" />
                 </div>
 
             </section>
