@@ -4,7 +4,6 @@ import HomeIcon from '../../assets/HomeIcon.svg?react';
 import MovieIcon from '../../assets/MovieIcon.svg?react';
 import TvShowIcon from '../../assets/TvShowIcon.svg?react';
 function NavMenu() {
-
     return (
         <>
             <header>
