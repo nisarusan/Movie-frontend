@@ -1,0 +1,12 @@
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    width: 70px;
+    height: 635px;
+    top: 55px;
+    border-radius: 10px;
+    background: #161E30;
+}

@@ -5,7 +5,7 @@ function TabBarMenu() {
     return (
         <>
             <div className="login-wrapper">
-                <NavLink className={({ isActive }) => isActive && 'login--active'} to="/">
+                <NavLink className={({ isActive }) => isActive && 'login--active'} to="/login">
                     Login
                 </NavLink>
                 <NavLink className={({ isActive }) => isActive && 'login--active'} to="/signup">
