@@ -1,6 +1,10 @@
 import './LoginPage.css';
 import MovieAppLogo from "/src/assets/movieapp.svg?react";
-
+import TabBarMenu from "../../component/tabBarMenu/tabBarMenu.jsx";
+import React, { useState, useEffect } from 'react';
+import {Routes, Route} from "react-router-dom";
+import LoginTab from "../LoginTab/LoginTab.jsx";
+import SignupTab from "../SignupTab/SignupTab.jsx";
 function LoginPage() {
     return (
         <>
@@ -10,11 +14,11 @@ function LoginPage() {
                 </nav>
                 <section>
                     <div className="login">
-                        <div className="login-wrapper">
-                            <p>Login
-                            </p>
-                            <p className="login--active">Signup</p>
-                        </div>
+                        <TabBarMenu />
+                        <Routes>
+                            <Route path="/login" element={<LoginTab />} />
+                            <Route path="/signup" element={<SignupTab />} />
+                        </Routes>
                         <form action="">
                             <div className="login-input">
                                 <label htmlFor="name"><input type="text" placeholder="naam"/></label>
@@ -29,8 +33,6 @@ function LoginPage() {
         </>
     )
         ;
-
-
 }
 
 export default LoginPage;

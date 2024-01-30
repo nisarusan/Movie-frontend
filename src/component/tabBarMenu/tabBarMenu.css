@@ -1,0 +1,19 @@
+.login-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    color: #3F5483;
+    font-size: 3.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 2rem 0;
+
+}
+
+.login--active {
+    color: #FFFFFF;
+    border-bottom: .2rem solid red;
+    padding-bottom: 1rem;
+}
