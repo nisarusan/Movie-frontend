@@ -11,7 +11,7 @@ function LoginPage() {
                 <nav>
                     <MovieAppLogo/>
                 </nav>
-                <section>
+                <section className="login-page">
                         <TabBarMenu />
                         <Routes>
                             <Route path="/login/*" element={<LoginTab />} />

@@ -4,17 +4,20 @@ export default function FeaturedMovieIntro() {
     return (
         <>
             <section className="intro-movie">
-                <div className="intro-movie-description"><h2>
-                    Avatar
-                </h2>
+                <div className="intro-movie-description">
+                    <h1 className="intro-movie-title">
+                        Avatar
+                    </h1>
                     <p>Ved and Tara fall in love while on a holiday in Corsica and decide to keep their real identities
                         undisclosed. Tara returns to Delhi and meets a new Ved, who is trying to discover his true
                         self.</p>
-                    <p className="intro-movie-color--grey">
-                        GENRES</p>
-                    <p className="intro-movie-color--blue">
-                        Romance, Drama
-                    </p>
+                    <div className="intro-movie-categorie">
+                        <p className="intro-movie-color--grey">
+                            GENRES</p>
+                        <p className="intro-movie-color--blue">
+                            Romance, Drama
+                        </p>
+                    </div>
                     <div className="intro-movie-button">
                         <button>Watch</button>
                         <button>MyList +</button>
@@ -23,7 +26,7 @@ export default function FeaturedMovieIntro() {
                     </div>
                 </div>
                 <div className="intro-movie-image">
-                    <img src="/src/assets/avatar-image.png" alt="" />
+                    <img src="/src/assets/avatar-image.png" alt=""/>
                 </div>
 
             </section>

@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-section {
+section .login-page {
     width: 32rem;
     flex-shrink: 0;
     border-radius: 1.4rem;
