@@ -3,15 +3,23 @@ import MovieApp from "../../assets/MovieAppIcon.svg?react";
 import HomeIcon from '../../assets/HomeIcon.svg?react';
 import MovieIcon from '../../assets/MovieIcon.svg?react';
 import TvShowIcon from '../../assets/TvShowIcon.svg?react';
+import {NavLink} from "react-router-dom";
+
 function NavMenu() {
     return (
         <>
             <header>
                 <nav className="menu">
-                    <MovieApp />
-                    <HomeIcon/>
-                    <MovieIcon/>
-                    <TvShowIcon/>
+                    <MovieApp/>
+                    <NavLink className={({isActive}) => isActive && 'login--active'} to="/">
+                        <HomeIcon/>
+                    </NavLink>
+                    <NavLink className={({isActive}) => isActive && 'login--active'} to="/">
+                        <MovieIcon/>
+                    </NavLink>
+                    <NavLink className={({isActive}) => isActive && 'login--active'} to="/">
+                        <TvShowIcon/>
+                    </NavLink>
                 </nav>
             </header>
         </>
