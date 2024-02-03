@@ -4,12 +4,29 @@
 }
 .search-bar {
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
     gap: 2rem;
+}
+
+.search-bar--input {
+    display: flex;
+    align-items: center;
     flex: 1;
 }
 
 .search-bar p {
     color: #505663;
 
+}
+.search-bar-avatar {
+    display: none;
+    cursor: pointer;
+}
+
+@media (min-width: 1080px) {
+    .search-bar-avatar {
+        display: block;
+    }
 }

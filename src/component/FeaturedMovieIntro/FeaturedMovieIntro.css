@@ -1,5 +1,6 @@
 .intro-movie {
     display: flex;
+    flex-direction: column;
     width: auto;
     justify-content: space-between;
     text-align: left;
@@ -13,4 +14,10 @@
 .intro-movie-description > p {
     color: #FFFFFF;
     margin-bottom: 1.4rem;
+}
+
+@media (min-width: 1080px) {
+    .intro-movie {
+    flex-direction: row;
+    }
 }

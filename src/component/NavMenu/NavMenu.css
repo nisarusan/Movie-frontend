@@ -1,13 +1,10 @@
 .menu {
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     position: sticky;
-    width: 70px;
-    height: 635px;
+    height: 73px;
     top: 55px;
-    border-radius: 10px;
     background: #161E30;
 }
 
@@ -21,6 +18,29 @@ a {
 
 input[type="text"], input[type="email"], input[type="password"] {
     border: none;
+}
+
+
+
+@media (min-width: 560px) {
+    .menu {
+        margin: 1rem;
+        border-radius: 1rem;
+    }
+}
+@media (min-width: 1080px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: sticky;
+        width: 70px;
+        height: 635px;
+        top: 55px;
+        border-radius: 10px;
+        background: #161E30;
+    }
 }
 
 

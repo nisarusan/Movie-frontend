@@ -1,13 +1,17 @@
 import './SearchBar.css';
 import SearchBarIcon from '../../assets/SearchBarIcon.svg?react'
+import AvatarImage from '../../assets/avatar.svg?react'
 
 function SearchBar() {
     return (
         <>
             <div className="search-bar">
-                <SearchBarIcon/>
-                <div className="login">
+                <div className="search-bar--input">
+                    <SearchBarIcon/>
                     <input type="text" placeholder="Search for any movies and tv shows"/>
+                </div>
+                <div className="search-bar-avatar">
+                    <AvatarImage/>
                 </div>
             </div>
         </>

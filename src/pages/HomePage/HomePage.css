@@ -1,12 +1,43 @@
+.homepage-wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
 .container {
     max-width: 115rem;
     display: flex;
+    flex-direction: column;
     margin: 0 auto;
     gap: 2rem;
+    margin: 0 2rem;
 }
 
 .home {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
+}
+
+@media(min-width: 1080px) {
+
+    .homepage-wrapper {
+        display: flex;
+        flex-direction: row;
+        margin: 2rem;
+    }
+    .container {
+        max-width: 115rem;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 0 2rem;
+        gap: 2rem;
+    }
+
+    .home {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+
+    }
 }

@@ -4,6 +4,7 @@ import HomeIcon from '../../assets/HomeIcon.svg?react';
 import MovieIcon from '../../assets/MovieIcon.svg?react';
 import TvShowIcon from '../../assets/TvShowIcon.svg?react';
 import {NavLink} from "react-router-dom";
+import AvatarImage from '../../assets/avatar.svg?react'
 
 function NavMenu() {
     return (
@@ -19,6 +20,9 @@ function NavMenu() {
                     </NavLink>
                     <NavLink className={({isActive}) => isActive && 'login--active'} to="/">
                         <TvShowIcon/>
+                    </NavLink>
+                    <NavLink className={({isActive}) => isActive && 'login--active'} to="/">
+                        <span className="avatars"><AvatarImage/></span>
                     </NavLink>
                 </nav>
             </header>

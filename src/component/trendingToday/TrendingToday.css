@@ -1,0 +1,13 @@
+.trending-today-title {
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    margin: 4rem 0 2rem 0;
+}
+.trending-today-movies {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    overflow: hidden;
+}
+

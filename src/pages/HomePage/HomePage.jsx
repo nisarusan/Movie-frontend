@@ -3,18 +3,24 @@ import NavMenu from "../../component/NavMenu/NavMenu.jsx";
 import SearchBar from "../../component/SearchBar/SearchBar.jsx";
 import FeaturedMovieIntro from "../../component/FeaturedMovieIntro/FeaturedMovieIntro.jsx";
 import TrendingToday from "../../component/trendingToday/TrendingToday.jsx";
+import MoviesToday from "../../component/MoviesToday/MoviesToday.jsx";
 
 function HomePage() {
     return (
         <>
-            <div className="container">
+            <main className="homepage-wrapper">
                 <NavMenu/>
-                <div className="home">
-                    <SearchBar/>
-                    <FeaturedMovieIntro/>
-                    <TrendingToday />
+                <div className="container">
+                    <div className="home">
+                        <SearchBar/>
+                        <FeaturedMovieIntro/>
+                        <TrendingToday/>
+                        <MoviesToday/>
+                        <MoviesToday/>
+                        <MoviesToday/>
+                    </div>
                 </div>
-            </div>
+            </main>
         </>
     );
 }
