@@ -1,0 +1,10 @@
+{
+  "movies": {
+    "title": "Killer of the Moons",
+    "year": 2023,
+    "director": "Franklink",
+    "genres": ["Drama", "Science Fiction"],
+    "rating": 4.5,
+    "image_url",
+  }
+}
