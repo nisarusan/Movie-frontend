@@ -8,20 +8,32 @@ import axios from "axios";
 import {useEffect, useState} from "react";
 
 function HomePage() {
-
     const [movies, setMovies] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         getMovieData();
     }, []);
-    async function getMovieData() {
+
+    const getMovieData = async () => {
         try {
-            const response = await axios.get(`https://api.themoviedb.org/3/movie/550?api_key=${process.env.REACT_APP_API_KEY}`);
-            setMovies(response);
-        } catch(e) {
-            console.error(e);
+            const response = await axios.get(`https://api.themoviedb.org/3/trending/movie/day`, {
+                headers: {
+                    Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NDIwYzA5OTk3YjY3YzFlMDFlMTU4NGQxNTQ4Y2E0NiIsInN1YiI6IjY1YjFlMGI3ZTI2N2RlMDE0OTA3ZDVlZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.2byAR_KsLD-MI_ydsH_3yZx_BJSzQ1zD06hZ8oB-EbQ",
+                    Accept: "application/json"
+                }
+            });
+            setMovies(response.data.results);
+            setLoading(false);
+        } catch (error) {
+            setError(error);
+            setLoading(false);
         }
     }
+
+    console.log(movies);
+
     return (
         <>
             <main className="homepage-wrapper">
@@ -31,9 +43,17 @@ function HomePage() {
                         <SearchBar/>
                         <FeaturedMovieIntro/>
                         <TrendingToday/>
-                        <MoviesToday/>
-                        <MoviesToday/>
-                        <MoviesToday/>
+                        {loading ? (
+                            <p>Loading...</p>
+                        ) : error ? (
+                            <p>Error: {error.message}</p>
+                        ) : (
+                            <>
+                                <MoviesToday title="Movies today" data={movies}/>
+                                <MoviesToday title="Popular " data={movies}/>
+                                <MoviesToday title="Top rated" data={movies}/>
+                            </>
+                        )}
                     </div>
                 </div>
             </main>
