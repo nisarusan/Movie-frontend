@@ -6,6 +6,8 @@ import TrendingToday from "../../component/trendingToday/TrendingToday.jsx";
 import MoviesToday from "../../component/MoviesToday/MoviesToday.jsx";
 import axios from "axios";
 import {useEffect, useState} from "react";
+import GenresCategory from "../../component/GenresCategory/GenresCategory.jsx";
+import MoviesPage from "../MoviesPage/MoviesPage.jsx";
 
 function HomePage() {
     const [movies, setMovies] = useState([]);
@@ -41,19 +43,22 @@ function HomePage() {
                 <div className="container">
                     <div className="home">
                         <SearchBar/>
-                        <FeaturedMovieIntro/>
-                        <TrendingToday/>
-                        {loading ? (
-                            <p>Loading...</p>
-                        ) : error ? (
-                            <p>Error: {error.message}</p>
-                        ) : (
-                            <>
-                                <MoviesToday title="Movies today" data={movies}/>
-                                <MoviesToday title="Popular " data={movies}/>
-                                <MoviesToday title="Top rated" data={movies}/>
-                            </>
-                        )}
+                        <MoviesPage />
+
+                        {/*<FeaturedMovieIntro/>*/}
+                        {/*<TrendingToday/>*/}
+                        {/*{loading ? (*/}
+                        {/*    <p>Loading...</p>*/}
+                        {/*) : error ? (*/}
+                        {/*    <p>Error: {error.message}</p>*/}
+                        {/*) : (*/}
+                        {/*    <>*/}
+                        {/*        <MoviesToday title="Movies today" data={movies}/>*/}
+                        {/*        <MoviesToday title="Popular " data={movies}/>*/}
+                        {/*        <MoviesToday title="Top rated" data={movies}/>*/}
+                        {/*    </>*/}
+                        {/*)}*/}
+                        {/*<GenresCategory />*/}
                     </div>
                 </div>
             </main>

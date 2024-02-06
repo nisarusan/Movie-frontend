@@ -1,0 +1,9 @@
+.library {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1rem;
+    background-color: #ffffff;
+    color: #0B1B35;
+    padding-right: 2rem;
+}

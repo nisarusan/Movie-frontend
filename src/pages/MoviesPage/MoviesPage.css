@@ -1,0 +1,27 @@
+.movie {
+    display: flex;
+    margin-top: 3rem;
+    gap: 2.4rem;
+}
+
+.movie-favorite {
+    display: flex;
+    align-items: center;
+    gap: 0 2rem;
+    margin-top: 2rem;
+}
+.movie-img {
+
+}
+
+.movie-img img {
+    max-width: 28rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: .8rem;
+    object-position: center;
+}
+
+movie-detail {
+    flex-grow: 1;
+}
