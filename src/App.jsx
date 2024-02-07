@@ -37,7 +37,6 @@ function App() {
         <>
             <Routes>
             {/*    <Slider slide={movieMap} />*/}
-
                 <Route path="/" element={<HomePage />} />
             </Routes>
         </>

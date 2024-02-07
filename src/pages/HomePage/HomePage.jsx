@@ -8,6 +8,7 @@ import axios from "axios";
 import {useEffect, useState} from "react";
 import GenresCategory from "../../component/GenresCategory/GenresCategory.jsx";
 import MoviesPage from "../MoviesPage/MoviesPage.jsx";
+import ProfilePage from "../ProfilePage/ProfilePage.jsx";
 
 function HomePage() {
     const [movies, setMovies] = useState([]);
@@ -43,7 +44,9 @@ function HomePage() {
                 <div className="container">
                     <div className="home">
                         <SearchBar/>
-                        <MoviesPage />
+                        <ProfilePage />
+                        <MoviesToday title="Movies today" data={movies}/>
+                        {/*<MoviesPage />*/}
 
                         {/*<FeaturedMovieIntro/>*/}
                         {/*<TrendingToday/>*/}

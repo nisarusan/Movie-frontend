@@ -1,0 +1,30 @@
+.tab-bar {
+}
+
+.tab-bar ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    background: #CCD3E3;
+    border-radius: 3.6rem;
+}
+
+.tab-bar ul li a {
+    border-radius: 3.6rem;
+    padding: 1rem 2rem;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+
+}
+
+.active {
+    background: #FFFFFF;
+    border-radius: 3.6rem;
+    border: 3px solid #FFAD61;
+    color: #0B1B35 !important;
+}
+.tab-bar ul li a {
+    color: #9699A0;
+}
