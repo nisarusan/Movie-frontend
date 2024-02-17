@@ -15,19 +15,27 @@ function HomePage() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
+
     useEffect(() => {
         getMovieData();
     }, []);
 
     const getMovieData = async () => {
         try {
-            const response = await axios.get(`https://api.themoviedb.org/3/trending/movie/day`, {
+            const urlMovieDb = 'https://api.themoviedb.org/3/trending/movie/day';
+            const urlMoviesTotal = 'http://localhost:8080/movie';
+            const response = await axios.get(`${urlMoviesTotal}`, {
                 headers: {
-                    Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NDIwYzA5OTk3YjY3YzFlMDFlMTU4NGQxNTQ4Y2E0NiIsInN1YiI6IjY1YjFlMGI3ZTI2N2RlMDE0OTA3ZDVlZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.2byAR_KsLD-MI_ydsH_3yZx_BJSzQ1zD06hZ8oB-EbQ",
+
+                    //imdb
+                    // Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NDIwYzA5OTk3YjY3YzFlMDFlMTU4NGQxNTQ4Y2E0NiIsInN1YiI6IjY1YjFlMGI3ZTI2N2RlMDE0OTA3ZDVlZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.2byAR_KsLD-MI_ydsH_3yZx_BJSzQ1zD06hZ8oB-EbQ",
+                    Authorization: "Basic " + btoa("henk:name"),
                     Accept: "application/json"
                 }
             });
-            setMovies(response.data.results);
+            // console.log(response);
+            // setMovies(response.data.results);
+            setMovies(response.data);
             setLoading(false);
         } catch (error) {
             setError(error);
@@ -35,7 +43,6 @@ function HomePage() {
         }
     }
 
-    console.log(movies);
 
     return (
         <>

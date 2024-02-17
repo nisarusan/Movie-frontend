@@ -1,10 +1,16 @@
+.movietab {
+    display: flex;
+    justify-content: center;
+}
+
 .tab-bar {
+    margin-top: 6rem;
+    width: 50%;
 }
 
 .tab-bar ul {
     display: flex;
     align-items: center;
-    gap: 2rem;
     list-style: none;
     background: #CCD3E3;
     border-radius: 3.6rem;

@@ -1,7 +1,9 @@
 .user {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 8rem;
 }
 
 .user-img {
@@ -9,6 +11,21 @@
     height: 16rem;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.user-avatar {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    flex-grow: 1;
+}
+
+.user-profile {
+    width: 100%;
+}
+
+.user-edit {
+    flex-grow: 2;
 }
 
 .user-profile input[type="text"] {
@@ -21,4 +38,15 @@
     font-weight: 600;
     line-height: 1.8rem;
 ;
+}
+
+@media (min-width: 1080px) {
+    .user {
+        justify-content: space-between;
+    }
+
+    .user-profile {
+        width: 50%;
+    }
+
 }

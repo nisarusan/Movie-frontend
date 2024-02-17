@@ -9,6 +9,7 @@ function ProfileTab() {
 //Later linkjes vervangen met NavLink
     return (
         <>
+            <hr />
             <section className="movietab">
                 <nav className="tab-bar">
                     <ul>
