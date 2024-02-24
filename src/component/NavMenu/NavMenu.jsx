@@ -12,7 +12,7 @@ function NavMenu() {
             <header>
                 <nav className="menu">
                     <MovieApp/>
-                    <NavLink className={({isActive}) => isActive && 'login--active'} to="/">
+                    <NavLink className={({isActive}) => isActive && 'login--active'} to="/homepage">
                         <HomeIcon/>
                     </NavLink>
                     <NavLink className={({isActive}) => isActive && 'login--active'} to="/">

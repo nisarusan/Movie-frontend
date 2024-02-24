@@ -23,18 +23,18 @@ function HomePage() {
     const getMovieData = async () => {
         try {
             const urlMovieDb = 'https://api.themoviedb.org/3/trending/movie/day';
-            const urlMoviesTotal = 'http://localhost:8080/movie';
+            const urlMoviesTotal = 'http://localhost:8080/movies';
             const response = await axios.get(`${urlMoviesTotal}`, {
                 headers: {
 
                     //imdb
                     // Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NDIwYzA5OTk3YjY3YzFlMDFlMTU4NGQxNTQ4Y2E0NiIsInN1YiI6IjY1YjFlMGI3ZTI2N2RlMDE0OTA3ZDVlZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.2byAR_KsLD-MI_ydsH_3yZx_BJSzQ1zD06hZ8oB-EbQ",
-                    Authorization: "Basic " + btoa("henk:name"),
+                    // Authorization: "Basic " + btoa("henk:name"),
                     Accept: "application/json"
                 }
             });
-            // console.log(response);
-            // setMovies(response.data.results);
+            console.log(response);
+            setMovies(response.data.results);
             setMovies(response.data);
             setLoading(false);
         } catch (error) {
@@ -51,7 +51,7 @@ function HomePage() {
                 <div className="container">
                     <div className="home">
                         <SearchBar/>
-                        <ProfilePage />
+                        {/*<ProfilePage />*/}
                         <MoviesToday title="Movies today" data={movies}/>
                         {/*<MoviesPage />*/}
 

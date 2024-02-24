@@ -14,7 +14,7 @@ function MoviesToday(props) {
                 </div>
             </div>
             <div className="movies-today-article">
-                {moviesMap.map(({title, releaseDate: release_date, imageUrl: poster_path, averageRating: vote_average}, index) => (
+                {moviesMap.map(({title, releaseDate: release_date, imageUrl: poster_path}, index) => (
                 /*{moviesMap.map(({title, release_date, poster_path, vote_average}, index) => (*/
                     <article className="movies-today--highlighted" key={index}>
                         <img className="movies-today-pic" src={`https://image.tmdb.org/t/p/w500/${poster_path}`} alt=""/>
@@ -22,7 +22,7 @@ function MoviesToday(props) {
                             <h2>{title}</h2>
                             <h4>{release_date.substring(0, 4)}</h4>
                             <div className="movies-today-review">
-                                <span>{vote_average.toFixed(1)}</span>
+                                {/*<span>{rating.toFixed(1)}</span>*/}
                                 <span className="movies-today--icn-spacer">
                                     <CheckIcon/>
                                     <SeeIcon className="movies-today--icn"/>
