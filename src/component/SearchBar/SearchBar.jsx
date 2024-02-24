@@ -10,9 +10,9 @@ function SearchBar() {
                     <SearchBarIcon/>
                     <input type="text" placeholder="Search for any movies and tv shows"/>
                 </div>
-                <div className="search-bar-avatar">
-                    <AvatarImage/>
-                </div>
+                {/*<div className="search-bar-avatar">*/}
+                {/*    <AvatarImage/>*/}
+                {/*</div>*/}
             </div>
         </>
     );

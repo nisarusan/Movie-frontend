@@ -4,6 +4,10 @@ import LoginPage from "./pages/LoginPage/LoginPage.jsx";
 import {Route, Routes} from "react-router-dom";
 import LoginTab from "./pages/LoginTab/LoginTab.jsx";
 import HomePage from "./pages/HomePage/HomePage.jsx";
+import MoviesToday from "./component/MoviesToday/MoviesToday.jsx";
+import NavMenu from "./component/NavMenu/NavMenu.jsx";
+import SearchBar from "./component/SearchBar/SearchBar.jsx";
+import MoviesPage from "./pages/MoviesPage/MoviesPage.jsx";
 // import Slider from "./component/SwiperSlide/SwiperSlide.jsx";
 // import movie1 from './assets/movie-1.png';
 // import movie2 from './assets/movie-2.png';
@@ -35,10 +39,23 @@ import HomePage from "./pages/HomePage/HomePage.jsx";
 function App() {
     return (
         <>
-            <Routes>
+            <main className="homepage-wrapper">
+                <NavMenu/>
+                <div className="container">
+                    <div className="home">
+                        <SearchBar/>
+                        <Routes>
+                            <Route path={"/"} element={<HomePage/>}/>
+                            <Route path={"/login"} element={<LoginPage/>}/>
+                            <Route path={"/movies-detail"} element={<MoviesPage/>}/>
+                        </Routes>
+            {/*<Routes>*/}
             {/*    <Slider slide={movieMap} />*/}
-                <Route path="/" element={<HomePage />} />
-            </Routes>
+            {/*    <Route path="/" element={<HomePage />} />*/}
+            {/*</Routes>*/}
+                    </div>
+                </div>
+            </main>
         </>
     )
 }

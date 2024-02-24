@@ -9,6 +9,7 @@ import {useEffect, useState} from "react";
 import GenresCategory from "../../component/GenresCategory/GenresCategory.jsx";
 import MoviesPage from "../MoviesPage/MoviesPage.jsx";
 import ProfilePage from "../ProfilePage/ProfilePage.jsx";
+import {Route, Routes} from "react-router-dom";
 
 function HomePage() {
     const [movies, setMovies] = useState([]);
@@ -46,32 +47,26 @@ function HomePage() {
 
     return (
         <>
-            <main className="homepage-wrapper">
-                <NavMenu/>
-                <div className="container">
-                    <div className="home">
-                        <SearchBar/>
-                        {/*<ProfilePage />*/}
-                        <MoviesToday title="Movies today" data={movies}/>
-                        {/*<MoviesPage />*/}
 
-                        {/*<FeaturedMovieIntro/>*/}
-                        {/*<TrendingToday/>*/}
-                        {/*{loading ? (*/}
-                        {/*    <p>Loading...</p>*/}
-                        {/*) : error ? (*/}
-                        {/*    <p>Error: {error.message}</p>*/}
-                        {/*) : (*/}
-                        {/*    <>*/}
-                        {/*        <MoviesToday title="Movies today" data={movies}/>*/}
-                        {/*        <MoviesToday title="Popular " data={movies}/>*/}
-                        {/*        <MoviesToday title="Top rated" data={movies}/>*/}
-                        {/*    </>*/}
-                        {/*)}*/}
-                        {/*<GenresCategory />*/}
-                    </div>
-                </div>
-            </main>
+                        {/*<ProfilePage />*/}
+                        {/*<MoviesToday title="Movies today" data={movies}/>*/}
+                        <MoviesPage />
+
+            {/*            /!*<FeaturedMovieIntro/>*!/*/}
+            {/*            /!*<TrendingToday/>*!/*/}
+            {/*            /!*{loading ? (*!/*/}
+            {/*            /!*    <p>Loading...</p>*!/*/}
+            {/*            /!*) : error ? (*!/*/}
+            {/*            /!*    <p>Error: {error.message}</p>*!/*/}
+            {/*            /!*) : (*!/*/}
+            {/*            /!*    <>*!/*/}
+            {/*            /!*        <MoviesToday title="Movies today" data={movies}/>*!/*/}
+            {/*            /!*        <MoviesToday title="Popular " data={movies}/>*!/*/}
+            {/*            /!*        <MoviesToday title="Top rated" data={movies}/>*!/*/}
+            {/*            /!*    </>*!/*/}
+            {/*            /!*)}*!/*/}
+            {/*            /!*<GenresCategory />*!/*/}
+
         </>
     );
 }

@@ -20,6 +20,10 @@ input[type="text"], input[type="email"], input[type="password"] {
     border: none;
 }
 
+.avatars svg {
+    width: 30px;
+    height: 30px;
+}
 
 
 @media (min-width: 560px) {
@@ -41,6 +45,13 @@ input[type="text"], input[type="email"], input[type="password"] {
         border-radius: 10px;
         background: #161E30;
     }
+
+    .avatars svg {
+    width: 40px;
+        height: 40px;
+    }
+
+
 }
 
 
