@@ -50,17 +50,17 @@ function HomePage() {
 
                         {/*<ProfilePage />*/}
                         {/*<MoviesToday title="Movies today" data={movies}/>*/}
-                        <MoviesPage />
+                        {/*<MoviesPage />*/}
 
-            {/*            /!*<FeaturedMovieIntro/>*!/*/}
-            {/*            /!*<TrendingToday/>*!/*/}
+                        <FeaturedMovieIntro/>
+                        <TrendingToday/>
             {/*            /!*{loading ? (*!/*/}
             {/*            /!*    <p>Loading...</p>*!/*/}
             {/*            /!*) : error ? (*!/*/}
             {/*            /!*    <p>Error: {error.message}</p>*!/*/}
             {/*            /!*) : (*!/*/}
             {/*            /!*    <>*!/*/}
-            {/*            /!*        <MoviesToday title="Movies today" data={movies}/>*!/*/}
+                                <MoviesToday title="Movies" data={movies}/>
             {/*            /!*        <MoviesToday title="Popular " data={movies}/>*!/*/}
             {/*            /!*        <MoviesToday title="Top rated" data={movies}/>*!/*/}
             {/*            /!*    </>*!/*/}

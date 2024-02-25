@@ -1,5 +1,6 @@
 .user {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
@@ -15,6 +16,7 @@
 
 .user-avatar {
     display: flex;
+
     justify-content: center;
     /*align-items: center;*/
     flex-grow: 1;
@@ -43,6 +45,7 @@
 @media (min-width: 1080px) {
     .user {
         justify-content: space-between;
+        flex-direction: row;
     }
 
     .user-profile {

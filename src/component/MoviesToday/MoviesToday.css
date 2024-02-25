@@ -31,10 +31,9 @@
 }
 
 .movies-today-pic {
-    max-width: 19rem;
-    max-height: 27rem;
-    border-radius: 1rem
+    width: 100%;
 }
+
 
 .movies-today-review {
     display: flex;
@@ -59,5 +58,23 @@
 @media (min-width: 1080px) {
     .movies-today-article {
         gap: 4rem 1rem
+    }
+
+
+    .movies-today-pic {
+        max-width: 19rem;
+        max-height: 27rem;
+        border-radius: 1rem
+    }
+
+    .movies-today--highlighted {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (max-width: 56rem) {
+        .movies-today--highlighted {
+          width: 100%;
+        }
     }
 }

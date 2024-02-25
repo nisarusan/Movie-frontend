@@ -16,6 +16,11 @@
     margin-bottom: 1.4rem;
 }
 
+.intro-movie-image img {
+    padding-top: 2rem;
+    width: 100%;
+}
+
 @media (min-width: 1080px) {
     .intro-movie {
     flex-direction: row;

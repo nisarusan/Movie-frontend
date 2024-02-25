@@ -14,16 +14,16 @@ function NavMenu() {
             <header>
                 <nav className="menu">
                     <MovieApp/>
-                    <NavLink className={({isActive}) => isActive && 'login--active'} to="/homepage">
+                    <NavLink className={({isActive}) => isActive ? "active-link" : "default-link"} to="/">
                         <HomeIcon/>
                     </NavLink>
-                    <NavLink className={({isActive}) => isActive && 'login--active'} to="/">
+                    <NavLink className={({isActive}) => isActive ? "active-link" : "active-link"} to="/movies">
                         <MovieIcon/>
                     </NavLink>
-                    <NavLink className={({isActive}) => isActive && 'login--active'} to="/">
+                    <NavLink className={({isActive}) => isActive ? "active-link" : "default-link"} to="/tv">
                         <TvShowIcon/>
                     </NavLink>
-                    <NavLink className={({isActive}) => isActive && 'login--active'} to="/">
+                    <NavLink className={({isActive}) => isActive ? "active-link" : "default-link"} to="/profile">
                         <span className="avatars"><AvatarImage/></span>
                     </NavLink>
                 </nav>

@@ -8,6 +8,8 @@ import MoviesToday from "./component/MoviesToday/MoviesToday.jsx";
 import NavMenu from "./component/NavMenu/NavMenu.jsx";
 import SearchBar from "./component/SearchBar/SearchBar.jsx";
 import MoviesPage from "./pages/MoviesPage/MoviesPage.jsx";
+import ProfilePage from "./pages/ProfilePage/ProfilePage.jsx";
+import SignupTab from "./pages/SignupTab/SignupTab.jsx";
 // import Slider from "./component/SwiperSlide/SwiperSlide.jsx";
 // import movie1 from './assets/movie-1.png';
 // import movie2 from './assets/movie-2.png';
@@ -47,7 +49,10 @@ function App() {
                         <Routes>
                             <Route path={"/"} element={<HomePage/>}/>
                             <Route path={"/login"} element={<LoginPage/>}/>
-                            <Route path={"/movies-detail"} element={<MoviesPage/>}/>
+                            <Route path={"/movies"} element={<MoviesPage/>}/>
+                            <Route path={"/tv"} element={<MoviesPage/>}/>
+                            <Route path={"/profile"} element={<ProfilePage/>}/>
+                            <Route path={"/signup"} element={<SignupTab/>}/>
                         </Routes>
             {/*<Routes>*/}
             {/*    <Slider slide={movieMap} />*/}

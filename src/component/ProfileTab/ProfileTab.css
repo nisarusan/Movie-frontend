@@ -5,7 +5,8 @@
 
 .tab-bar {
     margin-top: 6rem;
-    width: 50%;
+   width: 100%;
+    word-break: break-all;
 }
 
 .tab-bar ul {
@@ -16,13 +17,15 @@
     border-radius: 3.6rem;
 }
 
+.tab-bar ul li {
+    width: 100%;
+}
+
 .tab-bar ul li a {
     border-radius: 3.6rem;
-    padding: 1rem 2rem;
     display: flex;
     gap: .5rem;
     align-items: center;
-
 }
 
 .active {
@@ -33,4 +36,15 @@
 }
 .tab-bar ul li a {
     color: #9699A0;
+}
+
+
+@media (min-width: 68rem) {
+    .tab-bar {
+        margin-top: 6rem;
+        width: 50%;
+    }
+    .tab-bar ul li a {
+        padding: 1rem 2rem;
+    }
 }

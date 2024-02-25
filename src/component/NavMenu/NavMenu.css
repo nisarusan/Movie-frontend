@@ -8,12 +8,12 @@
     background: #161E30;
 }
 
-nav:hover {
-
+.active-link {
+    border-bottom: 1px solid red;
 }
 
-a {
-
+.default-link {
+    border-bottom: 1px solid transparent;
 }
 
 input[type="text"], input[type="email"], input[type="password"] {

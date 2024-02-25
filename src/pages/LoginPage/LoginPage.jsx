@@ -1,7 +1,10 @@
 import './LoginPage.css';
 import MovieAppLogo from "/src/assets/movieapp.svg?react";
 import TabBarMenu from "../../component/tabBarMenu/tabBarMenu.jsx";
-import {Routes, Route} from "react-router-dom";
+import {
+    BrowserRouter as Router,
+    Route, Routes,
+} from 'react-router-dom';
 import LoginTab from "../LoginTab/LoginTab.jsx";
 import SignupTab from "../SignupTab/SignupTab.jsx";
 function LoginPage() {
@@ -13,10 +16,16 @@ function LoginPage() {
                 </nav>
                 <section className="login-page">
                         <TabBarMenu />
-                        <Routes>
-                            <Route path="/login/*" element={<LoginTab />} />
-                            <Route path="/signup" element={<SignupTab />} />
-                        </Routes>
+                    <Routes>
+                        <Route exact path="/login">
+                            {/*{coordinates={weatherData && weatherData.coord}}*/}
+                            <LoginTab/>
+                        </Route>
+                        <Route path="/signup">
+                            {/*coordinates={weatherData && weatherData.coord}*/}
+                            <SignupTab  />
+                        </Route>
+                    </Routes>
                 </section>
             </main>
         </>
