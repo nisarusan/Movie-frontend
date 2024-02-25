@@ -10,7 +10,6 @@ import SearchBar from "./component/SearchBar/SearchBar.jsx";
 import MoviesPage from "./pages/MoviesPage/MoviesPage.jsx";
 import ProfilePage from "./pages/ProfilePage/ProfilePage.jsx";
 import SignupTab from "./pages/SignupTab/SignupTab.jsx";
-// import Slider from "./component/SwiperSlide/SwiperSlide.jsx";
 // import movie1 from './assets/movie-1.png';
 // import movie2 from './assets/movie-2.png';
 // import movie3 from './assets/movie-3.png';

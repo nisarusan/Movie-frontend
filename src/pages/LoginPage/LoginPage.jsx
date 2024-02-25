@@ -19,7 +19,7 @@ function LoginPage() {
                     <Routes>
                         <Route exact path="/login">
                             {/*{coordinates={weatherData && weatherData.coord}}*/}
-                            <LoginTab/>
+                            <LoginTab />
                         </Route>
                         <Route path="/signup">
                             {/*coordinates={weatherData && weatherData.coord}*/}
