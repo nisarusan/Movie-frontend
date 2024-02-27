@@ -45,6 +45,7 @@ function App() {
                 <div className="container">
                     <div className="home">
                         <SearchBar/>
+                        {/*Need to add Homepage, loginpage, moviespage, profile page, add page, etc*/}
                         <Routes>
                             <Route path={"/"} element={<HomePage/>}/>
                             <Route path={"/login"} element={<LoginPage/>}/>
