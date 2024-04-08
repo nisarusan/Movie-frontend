@@ -5,8 +5,9 @@ import LibraryButton from "../../component/LibraryButton/LibraryButton.jsx";
 import AvatarImg from '../../assets/avatar-image.png';
 import MoviesToday from "../../component/MoviesToday/MoviesToday.jsx";
 
-function MoviesPage() {
-
+function MoviesPage(props) {
+    const moviesMap = Array.isArray(props.data) ? props.data : [];
+    console.log(moviesMap.data[0].description);
     return (
         <>
             <section className="movie">
@@ -38,6 +39,9 @@ function MoviesPage() {
                         </article>
                     </div>
                     <div className="movie-synopsis">
+                        <p>
+                            {moviesMap.data}
+                        </p>
                         <p>Ved and Tara fall in love while on a holiday in Corsica and decide to keep their real
                             identities undisclosed. Tara returns to Delhi and meets a new Ved, who is trying to discover
                             his true self.

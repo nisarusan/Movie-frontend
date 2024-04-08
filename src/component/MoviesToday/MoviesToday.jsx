@@ -3,11 +3,12 @@ import CheckIcon from '../../assets/plus-icon.svg?react';
 import SeeIcon from '../../assets/eye-seen-icon.svg?react';
 import {Swiper, SwiperSlide} from "swiper/react";
 import {EffectCoverflow, Navigation, Pagination, Scrollbar} from 'swiper/modules';
+import axios from "axios";
+import {useState} from "react";
 
 
 function MoviesToday(props) {
     const moviesMap = Array.isArray(props.data) ? props.data : [];
-
     return (
         <section className="movies-today">
             <div className="movie-today-title">
